@@ -1,0 +1,149 @@
+/* Light Mode Variables */
+:root {
+    --bg-color: #ffffff;
+    --btn-color: #4CAF50;
+    --header-color: #81C784;
+    --text-color: #212121;
+    --text-header-color: #2E7D32;
+    --margin-spacing: 5em;
+    --light-yellow: rgba(255, 235, 59, 0.3);
+    --light-green: rgba(139, 195, 74, 0.3);
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+    --bg-color: #121212;
+    --btn-color: #66BB6A;
+    --header-color: #388E3C;
+    --text-color: #E0E0E0;
+    --text-header-color: #A5D6A7;
+    --light-yellow: rgba(255, 235, 59, 0.1);
+    --light-green: rgba(139, 195, 74, 0.1);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 20px;
+    min-height: 100vh;
+    font-family: 'Ubuntu', cursive;
+    font-size: 1.1vw;
+}
+
+h1 {
+    font-size: 2.5vw;
+    color: var(--text-header-color);
+}
+
+h2, h3 {
+    font-size: 2vw;
+    color: var(--text-header-color);
+}
+
+p {
+    color: #666666;
+}
+
+.form-input {
+    background-color: var(--light-yellow);
+    border: 2px solid var(--btn-color);
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.form-input:focus {
+    background-color: var(--light-green);
+    border-color: var(--text-header-color);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--btn-color);
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--header-color);
+    transform: scale(1.05);
+}
+
+.styled-link {
+    display: block;
+    background-color: var(--btn-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 4%;
+    border: outset grey;
+    transition: all 0.3s ease-in-out;
+}
+
+.styled-link:hover {
+    background-color: var(--header-color);
+    transform: scale(1.05);
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 2px solid var(--text-header-color);
+    border-radius: 5px;
+}
+
+.message-box {
+    width: 50%;
+    border: 2px solid #1B5E20;
+    background-color: var(--light-green);
+    color: black;
+    text-align: center;
+    margin: 12% auto;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+#toggleDarkMode {
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Adjust icon size */
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    cursor: pointer;
+    color: var(--text-header-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+#toggleDarkMode:hover {
+    color: var(--header-color);
+}
+@media (max-width: 768px) {
+    .navbar-inverse {
+        padding: 10px;
+    }
+    .navbar-inverse .navbar-nav > li {
+        display: block;
+        margin: 8px 0;
+    }
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+    .message-box {
+        width: 80%;
+    }
+}

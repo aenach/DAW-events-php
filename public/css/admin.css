@@ -1,0 +1,23 @@
+.table-wrapper {
+    display: block;
+    margin-right: auto;
+    margin-left: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.title {
+    padding-bottom: 2%;
+}
+
+.action-btn {
+    background-color: #9fa9a3;
+    margin-top: 0;
+}
+
+th {
+    text-align: center;
+}
+.users{
+    justify-content: center;
+}

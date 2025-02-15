@@ -1,0 +1,19 @@
+form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 7% auto;
+}
+
+.form-title {
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+label {
+    padding-bottom: 4%;
+}

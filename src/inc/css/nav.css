@@ -1,0 +1,112 @@
+/* 🌲 Nature-Inspired Navbar */
+.navbar-inverse {
+    background: linear-gradient(135deg, #1B5E20, #4CAF50); /* Deep forest green to vibrant green */
+    border-bottom: 3px solid #2E7D32; /* Rich green border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 12px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Links */
+.navbar-inverse .navbar-nav > li {
+    position: relative;
+    margin-left: 12px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: var(--light-green);
+    font-weight: bold;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover and Active Effects */
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > .active > a {
+    color: #1B5E20; /* Deep forest green */
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--light-green);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #C8E6C9;
+    transform: scale(1.1);
+}
+
+/* Navbar Brand Logo */
+.navbar-brand img {
+    height: 35px;
+    width: auto;
+    margin-right: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+    transform: rotate(10deg);
+}
+
+/* Dropdown Submenu Styling */
+.dropdown-menu {
+    display: none;               /* Hidden by default */
+    position: absolute;
+    top: 110%;                   /* Positioned just below the toggle button */
+    left: 0;
+    background: linear-gradient(135deg, #1B5E20, #4CAF50);  /* Gradient between deep and vibrant green */
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 180px;
+    overflow: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Show submenu on hover (or toggle via JavaScript by adding an "active" class) */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Dropdown Menu List Items */
+.dropdown-menu li {
+    list-style: none;
+}
+
+/* Dropdown Menu Links */
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 16px;
+    color: #E8F5E9;              /* Soft pale green for text */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Submenu Items */
+.dropdown-menu li a:hover {
+    background-color: rgba(232, 245, 233, 0.3); /* A subtle, light green overlay */
+}
+
+.badge {
+    font-size: 20px;
+    background: green;
+    border-radius: 10px;
+    color: #fff;
+    padding: 2px 6px;
+    margin: -10px 0 0 0;
+    vertical-align: top;
+    text-decoration: none;
+}

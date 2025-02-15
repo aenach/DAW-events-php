@@ -1,0 +1,130 @@
+/* Modified for a Vertical Left-Side Navbar */
+
+/* Navbar Container */
+.navbar-inverse {
+    /* Change gradient direction or keep as is */
+    background: linear-gradient(135deg, #1B5E20, #4CAF50);
+    /* Change border from bottom to right */
+    border-right: 3px solid #2E7D32;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+
+    /* Positioning for vertical layout */
+    position: fixed;    /* Fix the sidebar in place */
+    top: 0;
+    left: 0;
+    height: 100vh;      /* Full viewport height */
+    width: 220px;       /* Adjust width as desired */
+
+    /* Adjust padding – you can remove horizontal padding if not needed */
+    padding: 12px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--light-green);
+    transition: all 0.3s ease-in-out;
+    /* Optional: Add some padding to align with nav items */
+    padding: 12px 20px;
+}
+
+.navbar-brand:hover {
+    color: #C8E6C9;
+    transform: scale(1.1);
+}
+
+.navbar-brand img {
+    height: 35px;
+    width: auto;
+    margin-right: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+    transform: rotate(10deg);
+}
+
+/* Navbar Navigation List */
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar List Items */
+.navbar-inverse .navbar-nav > li {
+    position: relative;
+    /* Remove horizontal margin – use vertical spacing if desired */
+    margin: 0;
+    /* Optionally, add margin-bottom to space out items */
+    margin-bottom: 12px;
+}
+
+/* Navbar Links */
+.navbar-inverse .navbar-nav > li > a {
+    display: block;  /* Ensure links take up full width */
+    color: var(--light-green);
+    font-weight: bold;
+    /* Increase horizontal padding to match the sidebar width */
+    padding: 12px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover and Active Effects */
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > .active > a {
+    color: #1B5E20; /* Deep forest green */
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Dropdown Submenu Styling */
+.dropdown-menu {
+    /* Hide dropdown menus by default */
+    display: none;
+    position: absolute;
+    /* Position the dropdown to appear to the right of the parent */
+    top: 0;
+    left: 100%;
+    background: linear-gradient(135deg, #1B5E20, #4CAF50);
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 180px;
+    overflow: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Show submenu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Dropdown Menu List Items */
+.dropdown-menu li {
+    list-style: none;
+}
+
+/* Dropdown Menu Links */
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 16px;
+    color: #E8F5E9;  /* Soft pale green for text */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Submenu Items */
+.dropdown-menu li a:hover {
+    background-color: rgba(232, 245, 233, 0.3); /* A subtle, light green overlay */
+}

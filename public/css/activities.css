@@ -1,0 +1,102 @@
+
+.page-container{
+    margin-bottom: 15%;
+}
+.activity-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 4%;
+
+}
+
+.activity {
+    box-sizing: border-box;
+    width: calc(33.33% - 20px);
+    padding: 50px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.delete-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(231, 76, 60, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px outset black;
+    width: 30%;
+}
+
+.activity h2 {
+    margin-top: 0;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.activity-details {
+    text-align: left;
+}
+
+.admin-options {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pdf-form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pdf-form li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.pdf-form li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.pdf-form li a {
+    flex: 1;
+    text-decoration: none;
+    color: #333;
+}
+
+.pdf-form li input[type="number"] {
+    width: 50px;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+
+.pagination a {
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #23527c;
+    color: #fff;
+}

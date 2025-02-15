@@ -1,0 +1,35 @@
+.review {
+    margin-bottom: 40px;
+    background-color: rgba(159, 169, 163, 0.6);
+    border-radius: 8px;
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
+    padding: 15px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.review img {
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    width: 80px;
+    height: 80px;
+}
+
+.reviewer-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-text {
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.styled-link{
+    width: 50%;
+    margin: 0.5% auto 2%;
+}
